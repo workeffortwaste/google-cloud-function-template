@@ -2,7 +2,7 @@ if (!process.env.GCP_PROJECT) {
   require('dotenv').config()
 }
 
-exports.helloWorld = (req, res) => {
+exports.helloWorld = async (req, res) => {
   // Handle CORS
   res.set('Access-Control-Allow-Origin', '*')
 
