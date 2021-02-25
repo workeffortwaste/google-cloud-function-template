@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "functions-framework --target=helloWorld",
-    "deploy": "gcloud functions deploy helloWorld"
+    "deploy": "gcloud functions deploy helloWorld",
+    "init": "gcloud functions deploy helloWorld --runtime nodejs14 --trigger-http --allow-unauthenticated"
   },
   "keywords": [],
   "author": "",
