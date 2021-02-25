@@ -11,7 +11,7 @@ exports.helloWorld = (req, res) => {
     res.set('Access-Control-Allow-Methods', 'POST')
     res.set('Access-Control-Allow-Headers', 'Content-Type')
     res.set('Access-Control-Max-Age', '3600')
-    res.status(204).send('')
+    res.status(204).end()
   } else {
     res.send('Hello, World')
   }
